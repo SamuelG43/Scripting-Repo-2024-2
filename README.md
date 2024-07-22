@@ -235,7 +235,50 @@ Console.WriteLine($"Índice {i}: {arreglo[i]}");
 }
 ```
 -   ### 1 sobre cadenas
+	- ***Lea una cadena de números enteros positivos y luego cree un array con los números de la cadena, se debe validar que la cadena contenga números.***
+		- **R//**
+```c#
+using System;
+using System.Linq;
 
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese una cadena de números enteros positivos separados por espacios:");
+        string input = Console.ReadLine();
+
+        // Validar que la cadena contenga solo números y espacios
+        if (ValidarCadena(input))
+        {
+            // Crear un array con los números de la cadena
+            int[] numeros = ConvertirACadenaDeNumeros(input);
+            Console.WriteLine("El array de números es:");
+            foreach (int numero in numeros)
+            {
+                Console.WriteLine(numero);
+            }
+        }
+        else
+        {
+            Console.WriteLine("La cadena contiene caracteres no válidos. Por favor, ingrese solo números enteros positivos separados por espacios.");
+        }
+    }
+
+    static bool ValidarCadena(string input)
+    {
+        return input.All(c => char.IsDigit(c) || c == ' ');
+    }
+
+    static int[] ConvertirACadenaDeNumeros(string input)
+    {
+        // Separar la cadena en partes y convertir cada parte a un número entero
+        return input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(int.Parse)
+                    .ToArray();
+    }
+}
+```
 - ### 1 sobre condiciones o ciclos
 	- R//
 ```C#
