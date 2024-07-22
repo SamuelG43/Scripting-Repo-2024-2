@@ -347,29 +347,8 @@ Console.WriteLine(promedioFinal);
 }
 ```
     
--   ###  1 sobre condiciones o ciclos
-	-  **Usando un ciclo do-while calcule la suma de los primeros n números impares.**
-``` c#
-class Program
-{
-    static void Main()
-    {
-        Console.Write("Ingrese un número (n): ");
-        int n = int.Parse(Console.ReadLine());
 
-        int suma = 0;
-        int numero = 1; // Comenzamos con el primer número impar
 
-        do
-        {
-            suma += numero;
-            numero += 2; // Avanzamos al siguiente número impar
-        } while (numero <= 2 * n); // Continuamos hasta que alcancemos el doble de n
-
-        Console.WriteLine($"La suma de los primeros {n} números impares es: {suma}");
-    }
-}
-```
 
 - ### 2 preguntas de teoría
 	- 	- **Inicialice y declare 5 variables de diferente tipo.**
