@@ -172,7 +172,8 @@ Console.WriteLine("No Es Palindromo");
 ```
 	
 -   ### 1 sobre arreglos o matrices
-	- R//		
+	- ***Lea correctamente un array de n posiciones, luego llene las posiciones pares con 1 y las posiciones impares con cero.***
+		- **R//**		
  ```C#
  using System;
 
