@@ -712,5 +712,41 @@ persona.Edad = nuevaEdad;
 
 }
 ```
+##  Actividad para demostrar funciones a compañeros
 
+  
+```c#
+using System;
+
+class Program
+
+{
+
+static void Main()
+
+{
+
+int numero1 = 8;
+
+int numero2 = 12;
+
+int suma = ________(________, ________); // Completar la función para sumar dos números
+
+i
+
+Console.WriteLine("La suma de " + numero1 + " y " + numero2 + " es: " + suma);
+
+}
+
+static int ________(int ________ , int ________)
+
+{
+
+// Implementar la función para sumar dos números
+
+}
+
+}
+
+```
 
