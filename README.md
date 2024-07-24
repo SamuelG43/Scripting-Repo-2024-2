@@ -378,7 +378,7 @@ Console.WriteLine(i);
 ```
 
 
-## 20 firmas de funciones
+# 20 firmas de funciones
 
 ### *CON PARAMETRO Y RETORNO*
 
