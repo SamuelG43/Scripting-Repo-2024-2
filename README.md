@@ -613,29 +613,30 @@ class Program
 
 {
 
-	static void Main()
-	
-	{
-	
-		int numero1 = 8;
-		
-		int numero2 = 12;
-		
-		int suma = ________(________, ________); // Completar la función para sumar dos números
-		
-		
-		
-		Console.WriteLine("La suma de " + numero1 + " y " + numero2 + " es: " + suma);
-	
-	}
-	
-	static int ________(int ________ , int ________)
+    static void Main()
 
-	{
-	
-	// Implementar la función para sumar dos números
-	
-	}
+    {
+
+        int numero1 = 8;
+
+        int numero2 = 12;
+
+        int suma = ________(________, ________); // Completar la función para sumar dos números
+
+
+
+        Console.WriteLine("La suma de " + numero1 + " y " + numero2 + " es: " + suma);
+
+    }
+
+    static ____ ________(int ________, int ________)
+
+    {
+
+        // Implementar la función para sumar dos números
+        return ______;
+
+    }
 
 }
 
