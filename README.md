@@ -16,37 +16,44 @@ namespace Pruebas_de_Escritorio
     {
         static void Main(string[] args)
         {
-            // Leer el tamaño del array
-            Console.Write("Ingrese el tamaño del array: ");
-            int n = int.Parse(Console.ReadLine());
+            int[] Arreglo = new int[] { 1, 2, 3, 4, 5 };
 
-            // Crear el array con el tamaño especificado
-            int[] arreglo = new int[n];
-
-            // Llenar el array con 1s en posiciones pares y 0s en posiciones impares
-            for (int i = 0; i < arreglo.Length; i++)
+            
+            Console.WriteLine("arreglo\n");
+            for (int num = 0; num < Arreglo.Length; num++)
             {
-                if (i % 2 == 0)
-                {
-                    arreglo[i] = 1;
-                }
-                else if (i % 2 != 0)
-                {
-                    arreglo[i] = 0;
-                }
-
                 
+                Console.WriteLine(Arreglo[num] + "\n");
             }
+            
+            Console.WriteLine("\n");
+            InvertirArray(Arreglo);
+        }
 
-            // Mostrar el contenido del array
-            Console.WriteLine("Contenido del array:");
-            for (int i = 0; i < arreglo.Length; i++)
+        public static void InvertirArray(int[] Arreglo)
+        {
+            int i = 0;
+            int k = Arreglo.Length - 1;
+
+            while (i < k)
             {
-                Console.WriteLine($"Índice {i}: {arreglo[i]}");
+                int temp = Arreglo[i];
+                Arreglo[i] = Arreglo[k];
+                Arreglo[k] = temp;
+                k--;
+                i++;
+            }
+            Console.WriteLine("arreglo inverso:\n");
+            for (int num = 0; num < Arreglo.Length; num++)
+            {
+
+                Console.WriteLine(Arreglo[num] + "\n");
             }
         }
     }
 }
+
+```
 
  
 
@@ -121,7 +128,16 @@ namespace Pruebas_de_Escritorio
             // Llenar el array con 1s en posiciones pares y 0s en posiciones impares
             for (int i = 0; i < arreglo.Length; i++)
             {
-                arreglo[i] = (i % 2 == 0) ? 1 : 0;
+                if (i % 2 == 0)
+                {
+                    arreglo[i] = 1;
+                }
+                else if (i % 2 != 0)
+                {
+                    arreglo[i] = 0;
+                }
+
+                
             }
 
             // Mostrar el contenido del array
@@ -133,6 +149,7 @@ namespace Pruebas_de_Escritorio
         }
     }
 }
+
 
 ```
 ### 1 sobre cadenas
