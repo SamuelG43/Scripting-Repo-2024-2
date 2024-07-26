@@ -202,8 +202,7 @@ namespace Pruebas_de_Escritorio
 	
 ```
 using System;
-using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace Pruebas_de_Escritorio
 {
@@ -236,10 +235,12 @@ namespace Pruebas_de_Escritorio
             }
 
             promedioFinal = SumaNumeros / NumerosIngresados;
-            Console.WriteLine(promedioFinal);
+            Console.WriteLine("");
+            Console.WriteLine("EL PROMEDIO FINAL ES : " + promedioFinal);
         }
     }
 }
+
 
 ```
     
