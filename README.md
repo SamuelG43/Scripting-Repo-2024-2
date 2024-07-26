@@ -18,12 +18,16 @@ namespace Pruebas_de_Escritorio
         {
             int[] Arreglo = new int[] { 1, 2, 3, 4, 5 };
 
-            InvertirArray(Arreglo);
-
+            
+            Console.WriteLine("arreglo\n");
             for (int num = 0; num < Arreglo.Length; num++)
             {
-                Console.WriteLine(Arreglo[num]);
+                
+                Console.WriteLine(Arreglo[num] + "\n");
             }
+            
+            Console.WriteLine("\n");
+            InvertirArray(Arreglo);
         }
 
         public static void InvertirArray(int[] Arreglo)
@@ -39,9 +43,16 @@ namespace Pruebas_de_Escritorio
                 k--;
                 i++;
             }
+            Console.WriteLine("arreglo inverso:\n");
+            for (int num = 0; num < Arreglo.Length; num++)
+            {
+
+                Console.WriteLine(Arreglo[num] + "\n");
+            }
         }
     }
 }
+
 
 ```
  
